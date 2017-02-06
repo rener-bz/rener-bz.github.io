@@ -1,0 +1,58 @@
+/* menu mobile*/
+	/*Sem barra de rolagem horizontal*/
+	html, body {overflow-x: hidden;}	
+	menu img{display: none;}
+//    Mostra botão no mobile
+	.hamburger{display: block;}
+	.hamburger-inner,
+	.hamburger-inner:after,
+    .hamburger-inner:before{
+        background: $cor;
+    }
+
+.menu-header{
+    background: $cor; /*Background do menu*/
+    height: 100vh;
+    margin-top: 0;
+    padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+    text-align: center;
+	width: 200px; /* largura do menu */
+	z-index:1;
+    @include transform (translateX(-100%));
+    @include transition(all 0.25s linear);
+    li{width: 100%}
+    a {		
+        display: block;
+        border-bottom: 1px solid rgb(255,255,255);
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        height: 33vh;
+        text-decoration: none;
+        z-index: 2;
+        width: 100%;
+        &:hover,&:focus,&:active{
+            background: #EEE;
+            @include transition(all 0.25s linear);
+            color: $cor;
+            z-index:2;
+	    }
+	}
+}
+/*
+	Aqui você esconde o menu para fora da tela 
+	O valor é exatamente a largura da sidebar
+*/
+	
+/* Essa é a posição original do HEADER e do MAIN */
+.main {@include transform (translateX(0));}
+    /*.menu-active header,(empurra o "header" junto qdo o menu está ativo)*/
+.menu-active{
+    menu {@include transform (translateX(0));}  
+    .main {
+        @include transform (translateX(100%));
+        /*Retirar a margem branca a esquerda*/
+        margin: 0 -220px;
+    }
+}

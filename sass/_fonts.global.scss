@@ -1,0 +1,17 @@
+@font-face{
+	font-family: 'simplifica';
+	src: url('../fonts/simplifica.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/simplifica.woff') format('woff'),
+	url('../fonts/simplifica.ttf') format('truetype'),
+	url('../fonts/simplifica.svg') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
+//Fontes
+@mixin font-size($family, $sizeValue: 1.6, $weight: normal) {
+    $family:  'Roboto' !default;
+    font-family: $family, 'Arial', sans-serif;
+    font-size: ($sizeValue * 10) + px;
+    font-size: $sizeValue + rem;
+    font-weight: $weight;
+}
