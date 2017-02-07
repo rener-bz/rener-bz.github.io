@@ -6,7 +6,7 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="title" content="Rener Bezerra">
-    <meta name="description" content="Hi, I'm Rener, front-end developer, brazilian, and I make (web) solutions for real problems.</p>">
+    <meta name="description" content="Hi, I'm Rener, front-end developer, brazilian, and I make (web) solutions for real problems.">
     <meta name="author" content="Rener Bezerra">
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="theme/img/favicons/apple-touch-icon.png">
@@ -19,10 +19,12 @@
     <meta name="theme-color" content="#444444">
     <script defer type="text/javascript" src="theme/plugins/jquery-3.1.1.min.js"></script>
     <script defer type="text/javascript" src="theme/plugins/jquery-migrate-3.0.0.min.js"></script>
-    <script defer type="text/javascript" src="theme/js/main.js"></script>
+<!--    Bootstrap-->
+    <script defer type="text/javascript" src="theme/plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="theme/plugins/bootstrap-3.3.7-dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="theme/plugins/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="theme/css/estilo.css">
+    <script defer type="text/javascript" src="theme/js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="theme/css/estilo.css?up=1">
     <script type="application/ld+json">
     {
       "@context": "http://schema.org/",
@@ -33,9 +35,22 @@
     </script>
   </head>
   <body class="body">
-    <div class="col-xs-12 content-title"></div>
+    <div class="col-xs-12 content-title">
+    <div class="content-lang">
+        <button class="btn btn-default dropdown-toggle btn-lang" type="button" id="idioma" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    BR
+    <span class="caret"></span>
+  </button>
+    <ul class="dropdown-menu" aria-labelledby="idioma">
+        <li><a href="#">BR</a></li>
+        <li><a href="#">USA</a></li>
+    </ul>
+    </div>
+    
+    </div>
     <section class="col-xs-12 conteudo">
-      <div class="home-picture"></div>
+      <div class="home-picture">
+      </div>
       <div class="row">
           <div class="col-xs-12 col-md-6 col-md-offset-3 content-bio" role="article">
               <h1 class="title main-title">Rener Bezerra</h1>
