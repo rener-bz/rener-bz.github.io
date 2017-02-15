@@ -10,5 +10,8 @@ $('.hamburger').on('click touchstart', function(e){
     $('.idioma-link').on('click touchstart', function(e){
         value_idioma= $(this).html();
         $(".btn-lang_desc").html(value_idioma);
+        if (value_idioma == "USA"){
+            alert("usa");
+        }
     });
 });
