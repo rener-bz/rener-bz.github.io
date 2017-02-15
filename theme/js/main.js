@@ -1,4 +1,3 @@
-
 //Menu mobile
 $(document).ready(function(){
 $('.hamburger').on('click touchstart', function(e){  
@@ -6,15 +5,10 @@ $('.hamburger').on('click touchstart', function(e){
     $('html').toggleClass('menu-active');
     e.preventDefault();
     });
+//    Troca de idioma
+    var value_idioma;
+    $('.idioma-link').on('click touchstart', function(e){
+        value_idioma= $(this).html();
+        $(".btn-lang_desc").html(value_idioma);
+    });
 });
-//    Altura do site
-//    var altSite = $(window).height();
-//    Altura do site menos topo
-//    altSite = altSite - $('.content-title').height();
-//    altSite = altSite - $('.content-social').height();
-//    $('.conteudo').css({"min-height":+altSite+"px"});
-
-//$(".main-title").typed({
-//    strings: ["Desenvolvendo websites para pessoas.","Desenvolvendo lojas virtuais para pessoas.", "Desenvolvendo soluções para pessoas"],
-//    typeSpeed: 0
-//});
