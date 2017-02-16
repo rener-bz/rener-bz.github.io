@@ -16,7 +16,6 @@ $('.hamburger').on('click touchstart', function(e){
         if (value_idioma == "en"){
             $(".bio_desc").text("Front-end developer, now I'm working in Agência Giga, UX enthusiastic");
         }else{
-        
             $(".bio_desc").text("Desenvolvedor front-end, atualmente trabalha na Agência Giga, é entusiasta de UX design, tem interesse em arte, cultura, psicologia e uma boa leitura!");
         }
     });
