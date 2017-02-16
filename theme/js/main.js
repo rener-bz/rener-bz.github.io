@@ -8,7 +8,7 @@ $('.hamburger').on('click touchstart', function(e){
 //    Troca de idioma
     var value_idioma;
     $('.idioma-link').on('click touchstart', function(e){
-        value_idioma= $(this).html();
+        value_idioma= $(this).attr('id');
         alert (value_idioma);
         $(".btn-lang_desc").html(value_idioma);
         if (value_idioma == "en"){
