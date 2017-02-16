@@ -50,6 +50,25 @@ a{
     min-height: 15%;
     min-height: 15vh;
 }
+/*Idioma*/
+.content-lang{
+    margin-top: 15px;
+    position: relative;
+    text-transform: uppercase;
+}
+.idioma-link{
+    cursor: pointer;
+}
+.idioma-link_br{
+    &:hover,&:focus,&:active{
+        background-color: #007600;
+    }
+}
+.idioma-link_en{
+    &:hover,&:focus,&:active{
+        background-color: #C32126;
+    }
+}
 .home-picture{
     background: #FFF url(../img/home-image.png) no-repeat;
     background-size: cover;
@@ -146,4 +165,9 @@ a{
 .menu-contato_dark{
     background: #555;
     border: 1px solid #DDD;
+}
+.btn_dark{
+    background: #222;
+    border: 1px solid #EEE;
+    color: #EEE;
 }
