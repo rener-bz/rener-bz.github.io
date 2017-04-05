@@ -4,10 +4,11 @@ $('.hamburger').on('click touchstart', function(e){
     $('.hamburger').toggleClass('is-active');
     $('html').toggleClass('menu-active');
     e.preventDefault();
-    });
+});
 //    Troca de idioma
     var value_idioma;
     var name_idioma;
+//    Mudar idioma
     $('.idioma-link').on('click touchstart', function(e){
         value_idioma= $(this).attr('id');
         name_idioma= $(this).text();
@@ -22,5 +23,15 @@ $('.hamburger').on('click touchstart', function(e){
             $(".pdf_btn").attr("href","theme/pdf/rener-bezerra.pdf");
             $(".menu-tel").attr("href","tel:11953809720");
         }
+    });
+//    Apagar/acender a luz
+    $('.btn-light').on('click touchstart', function(e) {
+        $('.btn-light_icon').toggleClass('fa-moon-o');
+        $('.btn-light_icon').toggleClass('fa-sun-o');
+        $('.body').toggleClass('body_dark');
+        $('.menu-contato').toggleClass('menu-contato_dark');
+        $('.pdf_btn').toggleClass('btn_dark');
+        alert ("luz");
+        e.preventDefault();
     });
 });
