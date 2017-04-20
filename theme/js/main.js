@@ -15,7 +15,7 @@ $('.hamburger').on('click touchstart', function (e) {
         
         $(".btn-lang_desc").html(value_idioma);
         if (value_idioma == "en") {
-            $(".bio_desc").text("Front-end developer, now I'm working in Agência Giga, UX enthusiastic");
+            $(".bio_desc").text("Front-end developer, now I'm working in Agência Giga, UX enthusiastic, interested in art, culture, psychology and a good book!");
             $(".pdf_btn").attr("href","theme/pdf/rener-bezerra_english.pdf");
             $(".menu-tel").attr("href","tel:+5511953809720");
         } else {
