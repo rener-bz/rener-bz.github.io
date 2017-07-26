@@ -1,28 +1,51 @@
+var lang_desc = {
+    "descricao":
+        [
+            {
+                "bio_desc": "Front-end developer, now I'm working in Agência Giga, UX enthusiastic, interested in art, culture, psychology and a good book!",
+                "pdf_link": "theme/pdf/rener-bezerra_english.pdf",
+                "menu_tel": "tel:+5511953809720"
+            },
+            {
+                "bio_desc": "Desenvolvedor front-end, atualmente trabalha na Agência Giga, é entusiasta de UX design, tem interesse em arte, cultura, psicologia e uma boa leitura!",
+                "pdf_link": "theme/pdf/rener-bezerra.pdf",
+                "menu_tel": "tel:11953809720"
+            }
+        ]
+}
 //Menu mobile
 $(document).ready(function() {
-$('.hamburger').on('click touchstart', function (e) {
-    $('.hamburger').toggleClass('is-active');
-    $('html').toggleClass('menu-active');
-    e.preventDefault();
-});
+    $('.hamburger').on('click touchstart', function (e) {
+        $('.hamburger').toggleClass('is-active');
+        $('html').toggleClass('menu-active');
+        e.preventDefault();
+    });
 //    Troca de idioma
     var value_idioma;
     var name_idioma;
 //    Mudar idioma
     $('.idioma-link').on('click touchstart', function (e) {
-        value_idioma = $(this).attr('id');
+        value_idioma = $(this).attr('data-lang');
         name_idioma = $(this).text();
         
         $(".btn-lang_desc").html(value_idioma);
-        if (value_idioma == "en") {
-            $(".bio_desc").text("Front-end developer, now I'm working in Agência Giga, UX enthusiastic, interested in art, culture, psychology and a good book!");
-            $(".pdf_btn").attr("href","theme/pdf/rener-bezerra_english.pdf");
-            $(".menu-tel").attr("href","tel:+5511953809720");
-        } else {
-            $(".bio_desc").text("Desenvolvedor front-end, atualmente trabalha na Agência Giga, é entusiasta de UX design, tem interesse em arte, cultura, psicologia e uma boa leitura!");
-            $(".pdf_btn").attr("href","theme/pdf/rener-bezerra.pdf");
-            $(".menu-tel").attr("href","tel:11953809720");
-        }
+//        if (value_idioma == "en") {
+//            $(".bio_desc").text("Front-end developer, now I'm working in Agência Giga, UX enthusiastic, interested in art, culture, psychology and a good book!");
+//            $(".pdf_btn").attr("href","theme/pdf/rener-bezerra_english.pdf");
+//            $(".menu-tel").attr("href","tel:+5511953809720");
+//        } else {
+//            $(".bio_desc").text("Desenvolvedor front-end, atualmente trabalha na Agência Giga, é entusiasta de UX design, tem interesse em arte, cultura, psicologia e uma boa leitura!");
+//            $(".pdf_btn").attr("href", "theme/pdf/rener-bezerra.pdf");
+//            $(".menu-tel").attr("href", "tel:11953809720");
+//        }
+        
+        $('.idioma-link').on('click touchstart', function (e) {
+            var id = $(this).attr('id');
+            $('.bio_desc').text(lang_desc.descricao[id].bio_desc);
+            $('.pdf_btn').attr("href",lang_desc.descricao[id].pdf_link);
+            $('.menu-tel').attr("href",lang_desc.descricao[id].menu_tel);
+            e.preventDefault();
+        });
     });
 //    Apagar/acender a luz
     $('.btn-light').on('click touchstart', function (e) {
