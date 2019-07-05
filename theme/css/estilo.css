@@ -30,11 +30,18 @@ a{
     margin:-40px auto auto;
     max-width:100%;
     width:80px;
-    -webkit-transition:all 0.5s linear;-moz-transition:all 0.5s linear;-ms-transition:all 0.5s linear;
-    -o-transition:all 0.5s linear;transition:all 0.5s linear
+    -webkit-transition:all 0.5s linear;
+    -moz-transition:all 0.5s linear;
+    -ms-transition:all 0.5s linear;
+    -o-transition:all 0.5s linear;
+    transition:all 0.5s linear
 }
 .home-picture:hover,.home-picture:focus,.home-picture:active{
-    -webkit-transform:scale(1.05);-moz-transform:scale(1.05);-ms-transform:scale(1.05);-o-transform:scale(1.05);transform:scale(1.05)
+    -webkit-transform:scale(1.05);
+    -moz-transform:scale(1.05);
+    -ms-transform:scale(1.05);
+    -o-transform:scale(1.05);
+    transform:scale(1.05)
 }
 .conteudo{
     min-height:75%;
@@ -57,19 +64,29 @@ a{
     text-align:center
 }
 .pdf_btn{
-    background:#FFF;border-radius:2px;border:1px solid #222;
-    color:#222;display:block;
+    background:#FFF;
+    border-radius:2px;
+    border:1px solid #222;
+    color:#222;
+    display:block;
     font-family:'Open sans', sans-serif;
-    margin:10px auto;padding-bottom:5px;padding-top:5px;text-align:center;
-    text-transform:uppercase;width:180px
+    margin:10px auto;
+    padding-bottom:5px;
+    padding-top:5px;
+    text-align:center;
+    text-transform:uppercase;
+    width:180px;
 }
 .pdf_btn:hover,.pdf_btn:focus,.pdf_btn:active{
-    background:red;border-color:#EEE;color:#EEE;
+    background:red;
+    border-color:#EEE;color:#EEE;
     text-decoration:none
 }
 .content-social{
-    bottom:0;min-height:10%;min-height:10vh;
-    padding:0;position:fixed;text-align:center;z-index:2
+    bottom:0;min-height:10%;
+    min-height:10vh;
+    padding:0;position:fixed;
+    text-align:center;z-index:2
 }
 .menu-contato{
     background:#FEFEFE;
@@ -86,7 +103,9 @@ a{
     color:#EEE;text-decoration:none
 }
 .contato-desc{
-    display:block;font-family:'Open sans', sans-serif;font-size:12px
+    display:block;
+    font-family:'Open sans', sans-serif;
+    font-size:12px;
 }
 .menu-git:hover,.menu-git:focus,.menu-git:active{background:#6e5494}
 .menu-in:hover,.menu-in:focus,.menu-in:active{background:#0077b5}
@@ -106,7 +125,8 @@ a{
 .menu-contato_dark{background:#222;border:1px solid #DDD}
 .menu-contato_dark.menu-git{color:#6e5494}
 .menu-contato_dark.menu-git:hover,.menu-contato_dark.menu-git:focus,.menu-contato_dark.menu-git:active{color:#FEFEFE}
-.menu-contato_dark.menu-in{color:#0077b5}.menu-contato_dark.menu-mail{color:#db3a1b}
+.menu-contato_dark.menu-in{color:#0077b5}
+.menu-contato_dark.menu-mail{color:#db3a1b}
 .menu-contato_dark.menu-mail:hover,.menu-contato_dark.menu-mail:focus,.menu-contato_dark.menu-mail:active{color:#FEFEFE}
 .menu-contato_dark.menu-medium{color:#00ab6c}
 .menu-contato_dark.menu-medium:hover,.menu-contato_dark.menu-medium:focus,.menu-contato_dark.menu-medium:active{color:#FEFEFE}
