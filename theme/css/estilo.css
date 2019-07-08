@@ -15,8 +15,16 @@ a{
 ::-webkit-selection{background:#222;color:#EEE}
 ::-moz-selection{background:#222;color:#EEE}
 ::selection{background:#222;color:#EEE}
-.title{font-family:'simplifica',sans-serif;text-align:center}
-.content-title{border-bottom:1px solid #CCC;min-height:15%;min-height:15vh}
+.title{
+    font-family:'simplifica',sans-serif;
+    margin-top: 25px;
+    text-align:center;
+}
+.content-title{
+    border-bottom:1px solid #CCC;
+    min-height:15%;
+    min-height: calc(15vh - 35px);
+}
 .content-lang{margin-top:15px;position:relative;text-transform:uppercase}
 .idioma-link{cursor:pointer}
 .idioma-link_br:hover,.idioma-link_br:focus,.idioma-link_br:active{background-color:#007600}
@@ -85,8 +93,9 @@ a{
 .content-social{
     bottom:0;min-height:10%;
     min-height:10vh;
-    padding:0;position:fixed;
-    text-align:center;z-index:2
+    position:fixed;
+    text-align:center;
+    z-index:2;
 }
 .menu-contato{
     background:#FEFEFE;
