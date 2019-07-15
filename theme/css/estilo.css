@@ -21,9 +21,9 @@ a{
     text-align:center;
 }
 .content-title{
-    border-bottom:1px solid #CCC;
+	margin-top: 15px;
     min-height:15%;
-    min-height: calc(15vh - 35px);
+    min-height: calc(15vh - 70px);
 }
 .content-lang{margin-top:15px;position:relative;text-transform:uppercase}
 .idioma-link{cursor:pointer}
