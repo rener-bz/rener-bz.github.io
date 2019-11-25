@@ -22,14 +22,15 @@
 	<meta name="msapplication-config" content="browserconfig.xml">
 	<meta name="theme-color" content="#f99f27">
     <!--		Jquery 3.4.1-->
-    <script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script defer  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js" integrity="sha256-91c9XEM8yFH2Mn9fn8yQaNRvJsEruL7Hctr6JiIY7Uw=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script  type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.1.0/jquery-migrate.min.js" integrity="sha256-91c9XEM8yFH2Mn9fn8yQaNRvJsEruL7Hctr6JiIY7Uw=" crossorigin="anonymous"></script>
 <!--[if lte IE 9]>
     <script type="text/javascript" src="theme/plugins/jquery-1.12.4.min.js"></script>
 <![endif]-->
-    <script defer type="text/javascript" src="theme/js/main.js"></script>
+    <script type="text/javascript" src="theme/js/main.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="theme/plugins/hamburgers.min.css">
     <link rel="stylesheet" type="text/css" href="theme/css/estilo.css?up=1">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59338850-2"></script>
@@ -55,69 +56,76 @@
       </script>
   </head>
   <body class="body">
-    <div class="content-title">
-        <img class="mx-auto d-block"  src="theme/img/logo.png" alt="RN desenvolvimento digital">
-    </div>
-    <section class="col-12">
-      <h2 class="title main-title">Desenvolvimento e estratégia digital</h2>
+    <div class="container">
       <div class="row">
-        <div class="col-12 col-md-6">
-          <div class="conteudo-box hover-orange">
-          <span>
-          <h3 class="title">Estratégia</h3>
-          <i class="fas fa-brain fa-lg"></i>
-          </span>
+          <div class="col-12 col-lg-4 content-title">
+            <div class="contentbg-title">
+              <img class="mx-auto d-block"  src="theme/img/logo.png" alt="RN desenvolvimento digital">
+              <h2 class="title main-title">Desenvolvimento e estratégia digital</h2>
+              </div>
           </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="conteudo-box hover-red">
-          <span>
-          <h3 class="title">Design</h3>
-          <i class="fas fa-ruler-combined fa-lg"></i>
-          </span>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="conteudo-box hover-blue">
-          <span>
-          <h3 class="title">Desenvolvimento</h3>
-          <i class="fas fa-code fa-lg"></i>
-          </span>
-          </div>
-        </div>
-        <div class="col-12 col-md-6">
-            <div class="conteudo-box hover-green">
-          <span>
-          <h3 class="title">Conteúdo</h3>
-          <i class="fas fa-pencil-alt fa-lg"></i>
-          </span>
-        </div>
-        </div>
+          <section class="col-12 col-lg-8">
+              <div class="row">
+                  <div class="col-12 col-md-6">
+                    <div class="conteudo-box hover-orange">
+                    <span>
+                    <h3 class="title">Estratégia</h3>
+                    <i class="fas fa-brain fa-lg"></i>
+                    </span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                      <div class="conteudo-box hover-red">
+                    <span>
+                    <h3 class="title">Design</h3>
+                    <i class="fas fa-ruler-combined fa-lg"></i>
+                    </span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                      <div class="conteudo-box hover-blue">
+                    <span>
+                    <h3 class="title">Desenvolvimento</h3>
+                    <i class="fas fa-code fa-lg"></i>
+                    </span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6">
+                      <div class="conteudo-box hover-green">
+                    <span>
+                    <h3 class="title">Conteúdo</h3>
+                    <i class="fas fa-pencil-alt fa-lg"></i>
+                    </span>
+                  </div>
+                  </div>
+                </div>
+          </section>
       </div>
-    </section>
-       <div class="col-12 content-social">
-        <div class="row">
-            <div class="col-12 col-md-6 col-lg-3" role="presentation">
-            <a class="menu-contato menu-git" rel="noopener" href="https://github.com/rener-bz" target="_blank">
-              <span><i class="fab fa-git-alt fa-lg" aria-hidden="true"></i> Github</span>
-            </a>
-          </div>
-            <div class="col-12 col-md-6 col-lg-3" role="presentation">
-            <a class="menu-contato menu-in" rel="noopener" href="https://br.linkedin.com/in/renerbz" target="_blank">
-              <span><i class="fab fa-linkedin" aria-hidden="true"></i> Linkedin</span>
-            </a>
-          </div>
-            <div class="col-12 col-md-6 col-lg-3" role="presentation">
-            <a class="menu-contato menu-mail" rel="noopener" href="mailto:rener.bezerra@gmail.com">
-              <span><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> E-mail</span>
-            </a>
-          </div>
-            <div class="col-12 col-md-6 col-lg-3" role="presentation">
-            <a class="menu-contato menu-wpp" rel="noopener" href="http://api.whatsapp.com/send?1=pt_BR&phone=558398902969">
-              <span><i class="fab fa-whatsapp fa-lg" aria-hidden="true"></i> Telefone</span>
-            </a>
-          </div>
-        </div>
       </div>
+      <button class="pull-right hamburger hamburger--slider btn-menu" type="button" aria-label="Menu" aria-controls="navigation">
+          <span class="hamburger-box">
+            <span class="hamburger-inner">
+                <span class="sr-only">Menu</span>
+            </span>
+          </span>
+        </button>
+        <nav class="menu-header" role="navigation">
+            <menu>
+                <a class="menu-contato menu-git" rel="noopener" href="https://github.com/rener-bz" target="_blank">
+                  <span><i class="fab fa-git-alt fa-lg" aria-hidden="true"></i> Github</span>
+                </a>
+          
+                <a class="menu-contato menu-in" rel="noopener" href="https://br.linkedin.com/in/renerbz" target="_blank">
+                  <span><i class="fab fa-linkedin" aria-hidden="true"></i> Linkedin</span>
+                </a>
+                <a class="menu-contato menu-mail" rel="noopener" href="mailto:rener.bezerra@gmail.com">
+                    <span><i class="fa fa-envelope fa-lg" aria-hidden="true"></i> E-mail</span>
+                </a>
+          
+                <a class="menu-contato menu-wpp" rel="noopener" href="http://api.whatsapp.com/send?1=pt_BR&phone=558398902969">
+                  <span><i class="fab fa-whatsapp fa-lg" aria-hidden="true"></i> Telefone</span>
+                </a>
+            </menu>
+        </nav>
   </body>
 </html>
